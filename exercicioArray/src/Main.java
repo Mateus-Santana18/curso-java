@@ -7,18 +7,31 @@ public class Main {
         for (int i = 0; i < pergunta; i++){
             arrayPesquisa[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite o salário: "));
         };
-        float maior = -1;
+        float maior = -1, salarioAcrescimo = 0, salarioTotal = 0;
 
         for (float m : arrayPesquisa){
             if (maior < m){
                 maior = m;
             }
         }
+
         for (float acr : arrayPesquisa){
-            if (acr < 2500){
+            if (acr <= 2500){
                 acr *= 1.10f;
+                salarioAcrescimo = acr;
             }
         }
-        System.out.println(maior);
+        for (float salario : arrayPesquisa){
+            if (salario <= 2500 ){
+                salarioTotal = salario;
+                System.out.println("O salário é de: " + salario + " Com o acréscimo dos 10% fica um total de: " + salarioAcrescimo);
+            }
+        }
+        if (salarioTotal > maior){
+            maior = salarioTotal;
+        }
+
+        System.out.println("O maior salário é: " + maior);
+
     }
 }
