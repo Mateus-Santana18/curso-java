@@ -15,8 +15,8 @@ public class Main {
             }
         }
         for (float acr : arrayPesquisa){
-            if (arrayPesquisa[] < 2500){
-                arrayPesquisa[i] *= 1.10;
+            if (acr < 2500){
+                acr *= 1.10f;
             }
         }
         System.out.println(maior);
