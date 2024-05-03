@@ -1,2 +1,2 @@
-# curso-java
-repositório feito para o curso de java do senai
+# Curso de java
+Repositório feito para armazenar projetos e idéias ao decorrer do curso.
