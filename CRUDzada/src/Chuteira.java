@@ -1,4 +1,14 @@
 public class Chuteira {
+    private String modelo;
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
     private String marca;
     private int tamanho;
     private float valor;
@@ -27,7 +37,8 @@ public class Chuteira {
         this.valor = valor;
     }
 
-    public Chuteira(String marca, int tamanho, float valor) {
+    public Chuteira(String modelo,String marca, int tamanho, float valor) {
+        this.modelo = modelo;
         this.marca = marca;
         this.tamanho = tamanho;
         this.valor = valor;
