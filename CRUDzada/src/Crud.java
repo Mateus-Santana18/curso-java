@@ -63,6 +63,7 @@ public class Crud extends JFrame{
                     txtMarca.setText(c.getMarca());
                     txtTamanho.setText(Integer.toString(c.getTamanho()));
                     txtValor.setText(Float.toString(c.getValor()));
+
                 }
             }
             mostrarTodos();
