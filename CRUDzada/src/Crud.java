@@ -24,14 +24,14 @@ public class Crud extends JFrame{
     private Chuteira alvo = null;
     ArrayList<Chuteira> chuteiras = new ArrayList<Chuteira>();
 
-    private void mostrarTodos(){
-        String s = "";
-        txtTodos.setText("");
-        for (Chuteira c : chuteiras){
-            s = s.concat(String.format("Modelo: %s \nMarca: %s \nTamanho: %d \nValor: R$ %.2f \n----------------------\n",c.getModelo(),c.getMarca(),c.getTamanho(),c.getValor()));
-            txtTodos.setText(s);
+        private void mostrarTodos(){
+            String s = "";
+            txtTodos.setText("");
+            for (Chuteira c : chuteiras){
+                s = s.concat(String.format("Modelo: %s \nMarca: %s \nTamanho: %d \nValor: R$ %.2f \n----------------------\n",c.getModelo(),c.getMarca(),c.getTamanho(),c.getValor()));
+                txtTodos.setText(s);
+            }
         }
-    }
 
     private void limparEntradas(){
 
